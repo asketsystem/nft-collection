@@ -1,7 +1,12 @@
-import "./App.css";
+import GlobalStyles from "./styles/GlobalStyles";
 
 function App() {
-  return <>App File</>;
+  return (
+    <>
+      <GlobalStyles />
+      App File
+    </>
+  );
 }
 
 export default App;
