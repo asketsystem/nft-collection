@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Logo from "./Logo";
 
 const Section = styled.section`
   width: 100vw;
@@ -12,7 +13,7 @@ const NavBar = styled.nav`
   align-items: center;
 
   width: 85%;
-  height: 5rem;
+  height: ${(props) => props.theme.navHeight};
   margin: 0 auto;
 `;
 
@@ -20,7 +21,7 @@ const Navigation = () => {
   return (
     <Section>
       <NavBar>
-        <h2>Logo</h2>
+        <Logo />
         <h2>Menu</h2>
         <h2>Button</h2>
       </NavBar>
