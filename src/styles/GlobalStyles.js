@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import "@fontsource/akaya-telivigala";
 import "@fontsource/sora";
 
-const createGlobalStyle = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
 
 *,*::before,*::after{
     margin: 0;
@@ -24,4 +24,4 @@ a{
 }
 `;
 
-export default createGlobalStyle;
+export default GlobalStyles;
