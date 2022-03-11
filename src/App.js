@@ -1,10 +1,12 @@
+import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./styles/GlobalStyles";
+import { light } from "./styles/Themes";
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      App File
+      <ThemeProvider theme={light}>App File</ThemeProvider>
     </>
   );
 }
